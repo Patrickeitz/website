@@ -1,0 +1,21 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Sobre Mim{% endblock %}
+{% block body_class %}page-sobre{% endblock %}
+
+{% block content %}
+    <div class="page-container">
+        <h1>Sobre</h1>
+        <p>Este site é um exemplo de atividade para demonstrar a utilização de templates HTML e arquivos CSS externos em um projeto Django. O objetivo é criar uma estrutura web funcional e organizada.</p>
+        <h2>O que aprendi:</h2>
+        <ul>
+            <li>Criação de projetos e apps Django</li>
+            <li>Configuração de rotas (URLs)</li>
+            <li>Criação de templates reutilizáveis (template inheritance)</li>
+            <li>Adição de arquivos estáticos (CSS)</li>
+            <li>Mapeamento de views para templates</li>
+        </ul>
+        <img src="{% static 'website/imagens/prancheta.jpg' %}" alt="Uma pessoa trabalhando em uma prancheta." class="page-image">
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Página Inicial{% endblock %}
+{% block body_class %}page-home{% endblock %}
+
+{% block content %}
+    <div class="page-container">
+        <h1>Bem-vindo ao Meu Projeto Django!</h1>
+        <p>Esta é a página inicial do meu site. Nela, exploramos os conceitos básicos do Django,
+           desde a configuração inicial até a criação de rotas e templates dinâmicos. A navegação
+           simples acima permite explorar outras páginas do site.</p>
+        <img src="{% static 'website/imagens/laptop.jpg' %}" alt="Uma imagem de um laptop com código na tela." class="page-image">
+    </div>
+{% endblock %}

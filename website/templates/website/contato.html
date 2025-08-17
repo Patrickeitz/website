@@ -1,0 +1,18 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Contato{% endblock %}
+{% block body_class %}page-contato{% endblock %}
+
+{% block content %}
+    <div class="page-container">
+        <h1>Contato</h1>
+        <p>Para entrar em contato, por favor, envie uma mensagem para o endereço abaixo. Estou disponível para tirar dúvidas sobre o projeto e sobre a utilização das tecnologias apresentadas.</p>
+        <address>
+            E-mail: <a href="mailto:contato@exemplo.com" class="link-btn">contato@exemplo.com</a><br>
+            Telefone: (xx) xxxx-xxxx
+        </address>
+        <img src="{% static 'website/imagens/celular.jpg' %}" alt="Uma imagem de uma pessoa em uma mesa com um celular." class="page-image">
+        <p>Agradeço o seu interesse!</p>
+    </div>
+{% endblock %}
